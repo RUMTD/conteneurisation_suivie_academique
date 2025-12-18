@@ -28,16 +28,11 @@ jobs:
       - name: Build with Maven
         run: mvn -B clean package -DskipTests=false
 
-      - name: Debug secrets
-        run: |
-          echo "DOCKERHUB_USERNAME='${{ secrets.DOCKERHUB_USERNAME }}'" 
-          echo "DOCKERHUB_TOKEN=***${{ secrets.DOCKERHUB_TOKEN != '' && 'OK' || 'VIDE' }}***"
-
       # Docker login & build/push
       - name: Login to Docker Hub
         uses: docker/login-action@v3
         with:
-          username: ${{ secrets.DOCKERHUB_USERNAME || 'MANQUE_USERNAME' }}
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Set up Docker Buildx

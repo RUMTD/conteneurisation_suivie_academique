@@ -895,3 +895,59 @@ Caused by: org.springframework.util.PlaceholderResolutionException: Could not re
 2025-12-18 16:14:35.204 [] [] [] [SpringApplicationShutdownHook] ERROR o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000478: Unsuccessful: alter table programmation drop foreign key FK6rx1jwh5dsv0317qf5mpjx2pm
 2025-12-18 16:14:35.205 [] [] [] [SpringApplicationShutdownHook] ERROR o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000478: Unsuccessful: alter table programmation drop foreign key FKn3n8q8k12ve2vd0hefngjw3tq
 2025-12-18 16:16:07.631 [] [] [] [main] ERROR c.s.s.implementations.SalleService - salle introuvable modification impossible
+2025-12-18 17:00:38.502 [] [] [] [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.suivi_academique.services.implementations.AffectationService required a bean of type 'com.suivi_academique.repositories.AffectationRepository' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.suivi_academique.repositories.AffectationRepository' in your configuration.
+
+2025-12-18 17:00:41.374 [] [] [] [main] ERROR c.s.s.implementations.SalleService - salle introuvable modification impossible
+2025-12-18 17:02:05.523 [] [] [] [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.suivi_academique.services.implementations.AffectationService required a bean of type 'com.suivi_academique.repositories.AffectationRepository' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.suivi_academique.repositories.AffectationRepository' in your configuration.
+
+2025-12-18 17:02:07.360 [] [] [] [main] ERROR c.s.s.implementations.SalleService - salle introuvable modification impossible
+2025-12-18 17:02:09.202 [] [] [] [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.suivi_academique.config.ApplicationConfig required a bean of type 'com.suivi_academique.repositories.PersonnelRepository' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.suivi_academique.repositories.PersonnelRepository' in your configuration.
+
+2025-12-18 17:05:08.973 [] [] [] [main] ERROR c.s.s.implementations.SalleService - salle introuvable modification impossible
+2025-12-18 17:05:18.523 [] [] [] [SpringApplicationShutdownHook] ERROR o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000478: Unsuccessful: alter table affectation drop foreign key FKh9ihr1xhavslkiabtetvbkxii
+2025-12-18 17:05:18.526 [] [] [] [SpringApplicationShutdownHook] ERROR o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000478: Unsuccessful: alter table affectation drop foreign key FKt941hwqldvsfcfwpgdx87s3yc
+2025-12-18 17:05:18.528 [] [] [] [SpringApplicationShutdownHook] ERROR o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000478: Unsuccessful: alter table programmation drop foreign key FKl399jftpsqgmf4ds7r6t9drdb
+2025-12-18 17:05:18.531 [] [] [] [SpringApplicationShutdownHook] ERROR o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000478: Unsuccessful: alter table programmation drop foreign key FK4iiq8v4eqbv19udenyv8oyhla
+2025-12-18 17:05:18.535 [] [] [] [SpringApplicationShutdownHook] ERROR o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000478: Unsuccessful: alter table programmation drop foreign key FK6rx1jwh5dsv0317qf5mpjx2pm
+2025-12-18 17:05:18.537 [] [] [] [SpringApplicationShutdownHook] ERROR o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000478: Unsuccessful: alter table programmation drop foreign key FKn3n8q8k12ve2vd0hefngjw3tq
+2025-12-18 17:06:52.642 [] [] [] [main] ERROR c.s.s.implementations.SalleService - salle introuvable modification impossible
+2025-12-18 17:09:38.810 [] [] [] [main] ERROR c.s.s.implementations.SalleService - salle introuvable modification impossible

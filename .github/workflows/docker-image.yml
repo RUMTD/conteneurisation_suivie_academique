@@ -17,7 +17,7 @@ jobs:
       - name: Allow package mvnw
         run: chmod +x mvnw
 
-      # (Optionnel) Build du JAR Spring Boot avant l'image
+      # Build du JAR Spring Boot avant l'image
       - name: Build Spring Boot JAR
         run: ./mvnw -B clean package
 

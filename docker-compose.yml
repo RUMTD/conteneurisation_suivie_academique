@@ -1,0 +1,86 @@
+version: "3.7"
+
+services:
+  # Base de données MySQL (inchangé)
+  mysqldb:
+    image: "mysql:8.0"
+    restart: always
+    ports:
+      - "3307:3306"
+    networks:
+      - sa_net
+    environment:
+      MYSQL_DATABASE: sa_api_db
+      MYSQL_ROOT_PASSWORD: root
+
+  # APPLICATION - MODE DEV (votre config originale)
+  sa_api_compose:
+    build: .
+    restart: always
+    ports:
+      - "8080:8089"
+    networks:
+      - sa_net
+    environment:
+      SPRING_PROFILES_ACTIVE: dev  # AJOUT: Active le profil dev
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysqldb:3306/sa_api_db?useSSL=false&allowPublicKeyRetrieval=true
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root
+      SPRING_JPA_HIBERNATE_DDL_AUTO: update
+      SPRING_JPA_SHOW_SQL: "true"
+    depends_on:
+      - mysqldb
+    volumes:
+      - .m2:/root/.m2
+    profiles:
+      - dev  # AJOUT: Ce service démarre avec --profile dev
+
+  # APPLICATION - MODE TEST (copie avec modifications)
+  sa_api_test:
+    build: .
+    restart: always
+    ports:
+      - "8090:8089"  # Port différent pour éviter conflit
+    networks:
+      - sa_net
+    environment:
+      SPRING_PROFILES_ACTIVE: test  # AJOUT: Active le profil test
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysqldb:3306/sa_api_db?useSSL=false&allowPublicKeyRetrieval=true
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root
+      SPRING_JPA_HIBERNATE_DDL_AUTO: create-drop  # Modifié pour test
+      SPRING_JPA_SHOW_SQL: "false"
+    depends_on:
+      - mysqldb
+    volumes:
+      - .m2:/root/.m2
+    profiles:
+      - test  # AJOUT: Ce service démarre avec --profile test
+
+  # APPLICATION - MODE PROD (avec variables d'environnement)
+  sa_api_prod:
+    build: .
+    restart: always
+    ports:
+      - "80:8089"  # Port 80 pour production
+    networks:
+      - sa_net
+    environment:
+      SPRING_PROFILES_ACTIVE: prod  # AJOUT: Active le profil prod
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysqldb:3306/sa_api_db?useSSL=false&allowPublicKeyRetrieval=true
+      SPRING_DATASOURCE_USERNAME: ${DB_USERNAME:-root}
+      SPRING_DATASOURCE_PASSWORD: ${DB_PASSWORD:-root}
+      JWT_SECRET: ${JWT_SECRET}  # Variable depuis .env
+      SPRING_JPA_HIBERNATE_DDL_AUTO: validate  # Sécurisé pour prod
+      SPRING_JPA_SHOW_SQL: "false"
+    depends_on:
+      - mysqldb
+    volumes:
+      - .m2:/root/.m2
+    env_file:
+      - .env  # AJOUT: Charge les variables depuis .env
+    profiles:
+      - prod  # AJOUT: Ce service démarre avec --profile prod
+
+networks:
+  sa_net:

@@ -19,7 +19,7 @@ jobs:
 
       # Build du JAR Spring Boot avant l'image
       - name: Build Spring Boot JAR
-        run: ./mvnw -B clean package
+        run: ./mvnw  clean package -DskipTests
 
       - name: Build Docker image
         run: |

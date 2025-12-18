@@ -1,0 +1,38 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout sources
+        uses: actions/checkout@v4
+
+      # (Optionnel) Build du JAR Spring Boot avant l'image
+      - name: Build Spring Boot JAR
+        run: mvn -B clean package
+
+      - name: Build Docker image
+        run: |
+          IMAGE_NAME=my-app
+          IMAGE_TAG=${GITHUB_SHA::7}
+          docker build . \
+            -f Dockerfile \
+            -t $IMAGE_NAME:$IMAGE_TAG
+
+      # (Optionnel) Push vers Docker Hub / GHCR
+      # - name: Login to Docker Hub
+      #   run: echo "${{ secrets.DOCKERHUB_TOKEN }}" | docker login -u "${{ secrets.DOCKERHUB_USERNAME }}" --password-stdin
+      #
+      # - name: Push image
+      #   run: |
+      #     IMAGE_NAME=monuser/mon-app
+      #     IMAGE_TAG=${GITHUB_SHA::7}
+      #     docker tag my-app:$IMAGE_TAG $IMAGE_NAME:$IMAGE_TAG
+      #     docker push $IMAGE_NAME:$IMAGE_TAG

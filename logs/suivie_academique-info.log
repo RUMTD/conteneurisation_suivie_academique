@@ -72,3 +72,313 @@ Error starting ApplicationContext. To display the condition evaluation report re
 2025-12-18 05:14:05.016 [] [] [] [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-12-18 05:14:05.032 [] [] [] [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2025-12-18 05:14:05.075 [] [] [] [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-18 11:13:33.833 [] [] [] [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-12-18 11:13:33.939 [] [] [] [restartedMain] INFO  c.s.SuiviAcademiqueApplication - Starting SuiviAcademiqueApplication using Java 21.0.9 with PID 1668 (D:\MP4_EADL\autodidacte\15\suivie_academique\target\classes started by TRUMD in D:\MP4_EADL\autodidacte\15\suivie_academique)
+2025-12-18 11:13:33.942 [] [] [] [restartedMain] INFO  c.s.SuiviAcademiqueApplication - The following 1 profile is active: "dev"
+2025-12-18 11:13:34.061 [] [] [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-18 11:13:34.062 [] [] [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-18 11:13:37.257 [] [] [] [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-18 11:13:37.440 [] [] [] [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 159 ms. Found 5 JPA repository interfaces.
+2025-12-18 11:13:39.495 [] [] [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8089 (http)
+2025-12-18 11:13:39.518 [] [] [] [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8089"]
+2025-12-18 11:13:39.520 [] [] [] [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-18 11:13:39.520 [] [] [] [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-12-18 11:13:39.629 [] [] [] [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-18 11:13:39.630 [] [] [] [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5566 ms
+2025-12-18 11:13:40.423 [] [] [] [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-18 11:13:40.521 [] [] [] [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-12-18 11:13:40.587 [] [] [] [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-18 11:13:41.172 [] [] [] [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-18 11:13:41.269 [] [] [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-18 11:13:41.763 [] [] [] [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@497ecc5a
+2025-12-18 11:13:41.780 [] [] [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-18 11:13:41.920 [] [] [] [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-18 11:13:43.384 [] [] [] [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-18 11:13:43.720 [] [] [] [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-18 11:13:44.260 [] [] [] [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-18 11:13:45.850 [] [] [] [restartedMain] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-12-18 11:13:47.785 [] [] [] [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-18 11:13:49.405 [] [] [] [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-12-18 11:13:49.657 [] [] [] [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8089"]
+2025-12-18 11:13:49.741 [] [] [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8089 (http) with context path '/'
+2025-12-18 11:13:49.772 [] [] [] [restartedMain] INFO  c.s.SuiviAcademiqueApplication - Started SuiviAcademiqueApplication in 17.267 seconds (process running for 19.901)
+2025-12-18 11:38:10.228 [] [] [] [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-18 11:38:10.308 [] [] [] [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-18 11:38:10.407 [] [] [] [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-18 11:38:10.467 [] [] [] [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-18 11:38:10.477 [] [] [] [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-18 11:38:23.001 [] [] [] [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-12-18 11:38:23.119 [] [] [] [restartedMain] INFO  c.s.SuiviAcademiqueApplication - Starting SuiviAcademiqueApplication using Java 21.0.9 with PID 16244 (D:\MP4_EADL\autodidacte\15\suivie_academique\target\classes started by TRUMD in D:\MP4_EADL\autodidacte\15\suivie_academique)
+2025-12-18 11:38:23.121 [] [] [] [restartedMain] INFO  c.s.SuiviAcademiqueApplication - The following 1 profile is active: "dev"
+2025-12-18 11:38:23.216 [] [] [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-18 11:38:23.217 [] [] [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-18 11:38:26.370 [] [] [] [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-18 11:38:26.563 [] [] [] [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 172 ms. Found 5 JPA repository interfaces.
+2025-12-18 11:38:28.446 [] [] [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8089 (http)
+2025-12-18 11:38:28.476 [] [] [] [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8089"]
+2025-12-18 11:38:28.479 [] [] [] [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-18 11:38:28.480 [] [] [] [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-12-18 11:38:28.601 [] [] [] [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-18 11:38:28.602 [] [] [] [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5384 ms
+2025-12-18 11:38:29.368 [] [] [] [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-18 11:38:29.502 [] [] [] [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-12-18 11:38:29.592 [] [] [] [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-18 11:38:30.226 [] [] [] [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-18 11:38:30.283 [] [] [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-18 11:38:30.658 [] [] [] [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@39793d00
+2025-12-18 11:38:30.671 [] [] [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-18 11:38:30.769 [] [] [] [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-18 11:38:32.170 [] [] [] [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-18 11:38:32.563 [] [] [] [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-18 11:38:33.079 [] [] [] [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-18 11:38:34.735 [] [] [] [restartedMain] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-12-18 11:38:37.234 [] [] [] [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-18 11:38:38.594 [] [] [] [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-12-18 11:38:38.775 [] [] [] [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8089"]
+2025-12-18 11:38:38.838 [] [] [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8089 (http) with context path '/'
+2025-12-18 11:38:38.854 [] [] [] [restartedMain] INFO  c.s.SuiviAcademiqueApplication - Started SuiviAcademiqueApplication in 17.974 seconds (process running for 19.927)
+2025-12-18 11:48:17.726 [] [] [] [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2025-12-18 11:48:18.161 [] [] [] [Thread-5] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-18 11:48:18.196 [] [] [] [tomcat-shutdown] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8089"]
+2025-12-18 11:48:18.259 [] [] [] [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-18 11:48:18.263 [] [] [] [Thread-5] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8089"]
+2025-12-18 11:48:18.404 [] [] [] [Thread-5] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-18 11:48:18.526 [] [] [] [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-18 11:48:18.728 [] [] [] [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-18 11:48:20.022 [] [] [] [restartedMain] INFO  c.s.SuiviAcademiqueApplication - Starting SuiviAcademiqueApplication using Java 21.0.9 with PID 16244 (D:\MP4_EADL\autodidacte\15\suivie_academique\target\classes started by TRUMD in D:\MP4_EADL\autodidacte\15\suivie_academique)
+2025-12-18 11:48:20.022 [] [] [] [restartedMain] INFO  c.s.SuiviAcademiqueApplication - The following 1 profile is active: "dev"
+2025-12-18 11:48:21.846 [] [] [] [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-18 11:48:21.921 [] [] [] [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 71 ms. Found 5 JPA repository interfaces.
+2025-12-18 11:48:22.235 [] [] [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8089 (http)
+2025-12-18 11:48:22.236 [] [] [] [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8089"]
+2025-12-18 11:48:22.236 [] [] [] [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-18 11:48:22.237 [] [] [] [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-12-18 11:48:22.274 [] [] [] [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-18 11:48:22.275 [] [] [] [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2246 ms
+2025-12-18 11:48:22.593 [] [] [] [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-18 11:48:22.596 [] [] [] [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-18 11:48:22.615 [] [] [] [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-18 11:48:22.617 [] [] [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2025-12-18 11:48:22.815 [] [] [] [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@71318b65
+2025-12-18 11:48:22.815 [] [] [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2025-12-18 11:48:22.822 [] [] [] [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-18 11:48:23.091 [] [] [] [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-18 11:48:23.411 [] [] [] [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-18 11:48:23.850 [] [] [] [restartedMain] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-12-18 11:48:24.029 [] [] [] [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-18 11:48:24.029 [] [] [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2025-12-18 11:48:24.031 [] [] [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2025-12-18 11:48:24.032 [] [] [] [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-12-18 11:48:24.043 [] [] [] [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-12-18 11:48:25.717 [] [] [] [restartedMain] INFO  c.s.SuiviAcademiqueApplication - Starting SuiviAcademiqueApplication using Java 21.0.9 with PID 16244 (D:\MP4_EADL\autodidacte\15\suivie_academique\target\classes started by TRUMD in D:\MP4_EADL\autodidacte\15\suivie_academique)
+2025-12-18 11:48:25.717 [] [] [] [restartedMain] INFO  c.s.SuiviAcademiqueApplication - The following 1 profile is active: "dev"
+2025-12-18 11:48:26.442 [] [] [] [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-18 11:48:26.502 [] [] [] [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 57 ms. Found 5 JPA repository interfaces.
+2025-12-18 11:48:26.830 [] [] [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8089 (http)
+2025-12-18 11:48:26.832 [] [] [] [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8089"]
+2025-12-18 11:48:26.832 [] [] [] [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-18 11:48:26.833 [] [] [] [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-12-18 11:48:26.874 [] [] [] [restartedMain] INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-18 11:48:26.875 [] [] [] [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1153 ms
+2025-12-18 11:48:27.184 [] [] [] [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-18 11:48:27.188 [] [] [] [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-18 11:48:27.205 [] [] [] [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-18 11:48:27.207 [] [] [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2025-12-18 11:48:27.212 [] [] [] [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@32e6114e
+2025-12-18 11:48:27.213 [] [] [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2025-12-18 11:48:27.219 [] [] [] [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-18 11:48:27.453 [] [] [] [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-18 11:48:27.544 [] [] [] [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-18 11:48:28.013 [] [] [] [restartedMain] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-12-18 11:48:28.670 [] [] [] [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-18 11:48:29.185 [] [] [] [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-12-18 11:48:29.225 [] [] [] [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8089"]
+2025-12-18 11:48:29.230 [] [] [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8089 (http) with context path '/'
+2025-12-18 11:48:29.237 [] [] [] [restartedMain] INFO  c.s.SuiviAcademiqueApplication - Started SuiviAcademiqueApplication in 3.612 seconds (process running for 610.31)
+2025-12-18 11:48:29.240 [] [] [] [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-12-18 11:55:19.605 [] [] [] [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-12-18 11:55:19.685 [] [] [] [main] INFO  c.s.c.SalleControllerTest - Starting SalleControllerTest using Java 21.0.9 with PID 15924 (started by TRUMD in D:\MP4_EADL\autodidacte\15\suivie_academique)
+2025-12-18 11:55:19.686 [] [] [] [main] INFO  c.s.c.SalleControllerTest - The following 1 profile is active: "dev"
+2025-12-18 11:55:21.979 [] [] [] [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-18 11:55:22.202 [] [] [] [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 202 ms. Found 5 JPA repository interfaces.
+2025-12-18 11:55:25.947 [] [] [] [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-18 11:55:26.167 [] [] [] [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-12-18 11:55:26.291 [] [] [] [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-18 11:55:26.610 [] [] [] [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-18 11:55:26.729 [] [] [] [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-18 11:55:27.243 [] [] [] [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2af31aba
+2025-12-18 11:55:27.249 [] [] [] [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-18 11:55:27.430 [] [] [] [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-18 11:55:28.996 [] [] [] [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-18 11:55:29.208 [] [] [] [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-18 11:55:30.099 [] [] [] [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-18 11:55:31.483 [] [] [] [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-12-18 11:55:34.129 [] [] [] [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-18 11:55:35.741 [] [] [] [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-12-18 11:55:35.741 [] [] [] [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-12-18 11:55:35.743 [] [] [] [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+2025-12-18 11:55:35.956 [] [] [] [main] INFO  c.s.c.SalleControllerTest - Started SalleControllerTest in 17.142 seconds (process running for 18.846)
+2025-12-18 11:55:36.918 [ANONYME] [127.0.0.1] [8bfb6bef] [main] INFO  c.s.config.LoggingFilter - 🚀 GET /salle/S999 | IP:127.0.0.1 | User:ANONYME | ID:8bfb6bef
+2025-12-18 11:55:36.963 [ANONYME] [127.0.0.1] [8bfb6bef] [main] INFO  c.s.config.LoggingAspect - 📥 Requête entrante: GET /salle/S999 | Méthode: com.suivi_academique.controllers.SalleController.Show | Paramètres: [S999]
+2025-12-18 11:55:36.982 [ANONYME] [127.0.0.1] [8bfb6bef] [main] INFO  c.s.config.LoggingAspect - 📤 Réponse envoyée: com.suivi_academique.controllers.SalleController.Show | Résultat: ResponseEntity
+2025-12-18 11:55:37.126 [ANONYME] [127.0.0.1] [3d299aa1] [main] INFO  c.s.config.LoggingFilter - 🚀 PUT /salle/S001 | IP:127.0.0.1 | User:ANONYME | ID:3d299aa1
+2025-12-18 11:55:37.162 [ANONYME] [127.0.0.1] [3d299aa1] [main] INFO  c.s.config.LoggingAspect - 📥 Requête entrante: PUT /salle/S001 | Méthode: com.suivi_academique.controllers.SalleController.update | Paramètres: [S001, com.suivi_academique.dto.SalleDTO@49f9ae3]
+2025-12-18 11:55:37.163 [ANONYME] [127.0.0.1] [3d299aa1] [main] INFO  c.s.config.LoggingAspect - 📤 Réponse envoyée: com.suivi_academique.controllers.SalleController.update | Résultat: ResponseEntity
+2025-12-18 11:55:37.215 [ANONYME] [127.0.0.1] [9141284e] [main] INFO  c.s.config.LoggingFilter - 🚀 GET /salle | IP:127.0.0.1 | User:ANONYME | ID:9141284e
+2025-12-18 11:55:37.216 [ANONYME] [127.0.0.1] [9141284e] [main] INFO  c.s.config.LoggingAspect - 📥 Requête entrante: GET /salle | Méthode: com.suivi_academique.controllers.SalleController.getAll | Paramètres: []
+2025-12-18 11:55:37.217 [ANONYME] [127.0.0.1] [9141284e] [main] INFO  c.s.config.LoggingAspect - 📤 Réponse envoyée: com.suivi_academique.controllers.SalleController.getAll | Résultat: ResponseEntity
+2025-12-18 11:55:37.245 [ANONYME] [127.0.0.1] [5ea49a84] [main] INFO  c.s.config.LoggingFilter - 🚀 PUT /salle/S999 | IP:127.0.0.1 | User:ANONYME | ID:5ea49a84
+2025-12-18 11:55:37.247 [ANONYME] [127.0.0.1] [5ea49a84] [main] INFO  c.s.config.LoggingAspect - 📥 Requête entrante: PUT /salle/S999 | Méthode: com.suivi_academique.controllers.SalleController.update | Paramètres: [S999, com.suivi_academique.dto.SalleDTO@62f4f79e]
+2025-12-18 11:55:37.248 [ANONYME] [127.0.0.1] [5ea49a84] [main] INFO  c.s.config.LoggingAspect - 📤 Réponse envoyée: com.suivi_academique.controllers.SalleController.update | Résultat: ResponseEntity
+2025-12-18 11:55:37.261 [ANONYME] [127.0.0.1] [c060b174] [main] INFO  c.s.config.LoggingFilter - 🚀 POST /salle | IP:127.0.0.1 | User:ANONYME | ID:c060b174
+2025-12-18 11:55:37.264 [ANONYME] [127.0.0.1] [c060b174] [main] INFO  c.s.config.LoggingAspect - 📥 Requête entrante: POST /salle | Méthode: com.suivi_academique.controllers.SalleController.save | Paramètres: [com.suivi_academique.dto.SalleDTO@67872787]
+2025-12-18 11:55:37.265 [ANONYME] [127.0.0.1] [c060b174] [main] INFO  c.s.config.LoggingAspect - 📤 Réponse envoyée: com.suivi_academique.controllers.SalleController.save | Résultat: ResponseEntity
+2025-12-18 11:55:37.279 [ANONYME] [127.0.0.1] [60c5c6a8] [main] INFO  c.s.config.LoggingFilter - 🚀 DELETE /salle/S999 | IP:127.0.0.1 | User:ANONYME | ID:60c5c6a8
+2025-12-18 11:55:37.280 [ANONYME] [127.0.0.1] [60c5c6a8] [main] INFO  c.s.config.LoggingAspect - 📥 Requête entrante: DELETE /salle/S999 | Méthode: com.suivi_academique.controllers.SalleController.delete | Paramètres: [S999]
+2025-12-18 11:55:37.282 [ANONYME] [127.0.0.1] [60c5c6a8] [main] INFO  c.s.config.LoggingAspect - 📤 Réponse envoyée: com.suivi_academique.controllers.SalleController.delete | Résultat: ResponseEntity
+2025-12-18 11:55:37.293 [ANONYME] [127.0.0.1] [066d41b5] [main] INFO  c.s.config.LoggingFilter - 🚀 GET /salle/S001 | IP:127.0.0.1 | User:ANONYME | ID:066d41b5
+2025-12-18 11:55:37.294 [ANONYME] [127.0.0.1] [066d41b5] [main] INFO  c.s.config.LoggingAspect - 📥 Requête entrante: GET /salle/S001 | Méthode: com.suivi_academique.controllers.SalleController.Show | Paramètres: [S001]
+2025-12-18 11:55:37.295 [ANONYME] [127.0.0.1] [066d41b5] [main] INFO  c.s.config.LoggingAspect - 📤 Réponse envoyée: com.suivi_academique.controllers.SalleController.Show | Résultat: ResponseEntity
+2025-12-18 11:55:37.304 [ANONYME] [127.0.0.1] [b9c69e3a] [main] INFO  c.s.config.LoggingFilter - 🚀 GET /salle | IP:127.0.0.1 | User:ANONYME | ID:b9c69e3a
+2025-12-18 11:55:37.321 [ANONYME] [127.0.0.1] [54c8fb10] [main] INFO  c.s.config.LoggingFilter - 🚀 DELETE /salle/S001 | IP:127.0.0.1 | User:ANONYME | ID:54c8fb10
+2025-12-18 11:55:37.323 [ANONYME] [127.0.0.1] [54c8fb10] [main] INFO  c.s.config.LoggingAspect - 📥 Requête entrante: DELETE /salle/S001 | Méthode: com.suivi_academique.controllers.SalleController.delete | Paramètres: [S001]
+2025-12-18 11:55:37.324 [ANONYME] [127.0.0.1] [54c8fb10] [main] INFO  c.s.config.LoggingAspect - 📤 Réponse envoyée: com.suivi_academique.controllers.SalleController.delete | Résultat: ResponseEntity
+2025-12-18 11:55:37.347 [] [] [] [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-18 11:55:37.352 [] [] [] [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-18 11:55:37.386 [] [] [] [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-18 13:41:50.201 [] [] [] [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-18 13:41:50.250 [] [] [] [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-18 13:41:50.290 [] [] [] [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-18 13:41:50.313 [] [] [] [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2025-12-18 13:41:50.329 [] [] [] [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+2025-12-18 13:42:01.276 [] [] [] [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-12-18 13:42:01.362 [] [] [] [restartedMain] INFO  c.s.SuiviAcademiqueApplication - Starting SuiviAcademiqueApplication using Java 21.0.9 with PID 4260 (D:\MP4_EADL\autodidacte\15\suivie_academique\target\classes started by TRUMD in D:\MP4_EADL\autodidacte\15\suivie_academique)
+2025-12-18 13:42:01.364 [] [] [] [restartedMain] INFO  c.s.SuiviAcademiqueApplication - The following 1 profile is active: "test"
+2025-12-18 13:42:01.463 [] [] [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-18 13:42:01.463 [] [] [] [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-18 13:42:04.208 [] [] [] [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-18 13:42:04.368 [] [] [] [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 139 ms. Found 5 JPA repository interfaces.
+2025-12-18 13:42:06.687 [] [] [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8090 (http)
+2025-12-18 13:42:06.708 [] [] [] [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2025-12-18 13:42:06.710 [] [] [] [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-18 13:42:06.711 [] [] [] [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-12-18 13:42:06.818 [] [] [] [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-18 13:42:06.818 [] [] [] [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5354 ms
+2025-12-18 13:42:07.572 [] [] [] [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-18 13:42:07.703 [] [] [] [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-12-18 13:42:07.780 [] [] [] [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-18 13:42:08.409 [] [] [] [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-18 13:42:08.490 [] [] [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-18 13:42:09.100 [] [] [] [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@b32efd1
+2025-12-18 13:42:09.114 [] [] [] [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-18 13:42:09.297 [] [] [] [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-18 13:42:10.969 [] [] [] [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-18 13:42:14.931 [] [] [] [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-18 13:42:15.460 [] [] [] [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-18 13:42:17.242 [] [] [] [restartedMain] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-12-18 13:42:19.857 [] [] [] [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-18 13:42:21.430 [] [] [] [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-12-18 13:42:21.534 [] [] [] [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2025-12-18 13:42:21.574 [] [] [] [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8090 (http) with context path '/'
+2025-12-18 13:42:21.588 [] [] [] [restartedMain] INFO  c.s.SuiviAcademiqueApplication - Started SuiviAcademiqueApplication in 21.551 seconds (process running for 22.683)
+2025-12-18 13:44:00.289 [] [] [] [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-12-18 13:44:00.360 [] [] [] [main] INFO  c.s.c.SalleControllerTest - Starting SalleControllerTest using Java 21.0.9 with PID 18300 (started by TRUMD in D:\MP4_EADL\autodidacte\15\suivie_academique)
+2025-12-18 13:44:00.361 [] [] [] [main] INFO  c.s.c.SalleControllerTest - The following 1 profile is active: "dev"
+2025-12-18 13:44:02.614 [] [] [] [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-18 13:44:02.775 [] [] [] [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 141 ms. Found 5 JPA repository interfaces.
+2025-12-18 13:44:06.494 [] [] [] [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-18 13:44:06.648 [] [] [] [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-12-18 13:44:06.764 [] [] [] [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-18 13:44:06.947 [] [] [] [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-18 13:44:07.022 [] [] [] [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-18 13:44:07.423 [] [] [] [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3da55998
+2025-12-18 13:44:07.429 [] [] [] [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-18 13:44:07.576 [] [] [] [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-18 13:44:08.912 [] [] [] [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-18 13:44:09.242 [] [] [] [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-18 13:44:10.035 [] [] [] [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-18 13:44:11.205 [] [] [] [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-12-18 13:44:14.895 [] [] [] [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-12-18 13:44:17.013 [] [] [] [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-12-18 13:44:17.013 [] [] [] [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-12-18 13:44:17.015 [] [] [] [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+2025-12-18 13:44:17.156 [] [] [] [main] INFO  c.s.c.SalleControllerTest - Started SalleControllerTest in 17.722 seconds (process running for 19.324)
+2025-12-18 13:44:17.739 [ANONYME] [127.0.0.1] [ad0b101d] [main] INFO  c.s.config.LoggingFilter - 🚀 GET /salle/S999 | IP:127.0.0.1 | User:ANONYME | ID:ad0b101d
+2025-12-18 13:44:17.818 [ANONYME] [127.0.0.1] [ad0b101d] [main] INFO  c.s.config.LoggingAspect - 📥 Requête entrante: GET /salle/S999 | Méthode: com.suivi_academique.controllers.SalleController.Show | Paramètres: [S999]
+2025-12-18 13:44:17.828 [ANONYME] [127.0.0.1] [ad0b101d] [main] INFO  c.s.config.LoggingAspect - 📤 Réponse envoyée: com.suivi_academique.controllers.SalleController.Show | Résultat: ResponseEntity
+2025-12-18 13:44:17.972 [ANONYME] [127.0.0.1] [8ffff123] [main] INFO  c.s.config.LoggingFilter - 🚀 PUT /salle/S001 | IP:127.0.0.1 | User:ANONYME | ID:8ffff123
+2025-12-18 13:44:18.013 [ANONYME] [127.0.0.1] [8ffff123] [main] INFO  c.s.config.LoggingAspect - 📥 Requête entrante: PUT /salle/S001 | Méthode: com.suivi_academique.controllers.SalleController.update | Paramètres: [S001, com.suivi_academique.dto.SalleDTO@511c856b]
+2025-12-18 13:44:18.015 [ANONYME] [127.0.0.1] [8ffff123] [main] INFO  c.s.config.LoggingAspect - 📤 Réponse envoyée: com.suivi_academique.controllers.SalleController.update | Résultat: ResponseEntity
+2025-12-18 13:44:18.076 [ANONYME] [127.0.0.1] [7c22503d] [main] INFO  c.s.config.LoggingFilter - 🚀 GET /salle | IP:127.0.0.1 | User:ANONYME | ID:7c22503d
+2025-12-18 13:44:18.078 [ANONYME] [127.0.0.1] [7c22503d] [main] INFO  c.s.config.LoggingAspect - 📥 Requête entrante: GET /salle | Méthode: com.suivi_academique.controllers.SalleController.getAll | Paramètres: []
+2025-12-18 13:44:18.078 [ANONYME] [127.0.0.1] [7c22503d] [main] INFO  c.s.config.LoggingAspect - 📤 Réponse envoyée: com.suivi_academique.controllers.SalleController.getAll | Résultat: ResponseEntity
+2025-12-18 13:44:18.106 [ANONYME] [127.0.0.1] [2641a955] [main] INFO  c.s.config.LoggingFilter - 🚀 PUT /salle/S999 | IP:127.0.0.1 | User:ANONYME | ID:2641a955
+2025-12-18 13:44:18.108 [ANONYME] [127.0.0.1] [2641a955] [main] INFO  c.s.config.LoggingAspect - 📥 Requête entrante: PUT /salle/S999 | Méthode: com.suivi_academique.controllers.SalleController.update | Paramètres: [S999, com.suivi_academique.dto.SalleDTO@3c846b00]
+2025-12-18 13:44:18.110 [ANONYME] [127.0.0.1] [2641a955] [main] INFO  c.s.config.LoggingAspect - 📤 Réponse envoyée: com.suivi_academique.controllers.SalleController.update | Résultat: ResponseEntity
+2025-12-18 13:44:18.126 [ANONYME] [127.0.0.1] [b1941c4a] [main] INFO  c.s.config.LoggingFilter - 🚀 POST /salle | IP:127.0.0.1 | User:ANONYME | ID:b1941c4a
+2025-12-18 13:44:18.130 [ANONYME] [127.0.0.1] [b1941c4a] [main] INFO  c.s.config.LoggingAspect - 📥 Requête entrante: POST /salle | Méthode: com.suivi_academique.controllers.SalleController.save | Paramètres: [com.suivi_academique.dto.SalleDTO@73e08a42]
+2025-12-18 13:44:18.130 [ANONYME] [127.0.0.1] [b1941c4a] [main] INFO  c.s.config.LoggingAspect - 📤 Réponse envoyée: com.suivi_academique.controllers.SalleController.save | Résultat: ResponseEntity
+2025-12-18 13:44:18.149 [ANONYME] [127.0.0.1] [eb213585] [main] INFO  c.s.config.LoggingFilter - 🚀 DELETE /salle/S999 | IP:127.0.0.1 | User:ANONYME | ID:eb213585
+2025-12-18 13:44:18.151 [ANONYME] [127.0.0.1] [eb213585] [main] INFO  c.s.config.LoggingAspect - 📥 Requête entrante: DELETE /salle/S999 | Méthode: com.suivi_academique.controllers.SalleController.delete | Paramètres: [S999]
+2025-12-18 13:44:18.153 [ANONYME] [127.0.0.1] [eb213585] [main] INFO  c.s.config.LoggingAspect - 📤 Réponse envoyée: com.suivi_academique.controllers.SalleController.delete | Résultat: ResponseEntity
+2025-12-18 13:44:18.167 [ANONYME] [127.0.0.1] [1713b549] [main] INFO  c.s.config.LoggingFilter - 🚀 GET /salle/S001 | IP:127.0.0.1 | User:ANONYME | ID:1713b549
+2025-12-18 13:44:18.169 [ANONYME] [127.0.0.1] [1713b549] [main] INFO  c.s.config.LoggingAspect - 📥 Requête entrante: GET /salle/S001 | Méthode: com.suivi_academique.controllers.SalleController.Show | Paramètres: [S001]
+2025-12-18 13:44:18.169 [ANONYME] [127.0.0.1] [1713b549] [main] INFO  c.s.config.LoggingAspect - 📤 Réponse envoyée: com.suivi_academique.controllers.SalleController.Show | Résultat: ResponseEntity
+2025-12-18 13:44:18.185 [ANONYME] [127.0.0.1] [bac81f3b] [main] INFO  c.s.config.LoggingFilter - 🚀 GET /salle | IP:127.0.0.1 | User:ANONYME | ID:bac81f3b
+2025-12-18 13:44:18.208 [ANONYME] [127.0.0.1] [ab39be56] [main] INFO  c.s.config.LoggingFilter - 🚀 DELETE /salle/S001 | IP:127.0.0.1 | User:ANONYME | ID:ab39be56
+2025-12-18 13:44:18.210 [ANONYME] [127.0.0.1] [ab39be56] [main] INFO  c.s.config.LoggingAspect - 📥 Requête entrante: DELETE /salle/S001 | Méthode: com.suivi_academique.controllers.SalleController.delete | Paramètres: [S001]
+2025-12-18 13:44:18.211 [ANONYME] [127.0.0.1] [ab39be56] [main] INFO  c.s.config.LoggingAspect - 📤 Réponse envoyée: com.suivi_academique.controllers.SalleController.delete | Résultat: ResponseEntity
+2025-12-18 13:44:18.310 [] [] [] [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-18 13:44:18.313 [] [] [] [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-18 13:44:18.377 [] [] [] [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

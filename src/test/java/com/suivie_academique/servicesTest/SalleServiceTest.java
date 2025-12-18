@@ -112,7 +112,7 @@ class SalleServiceTest {
             // Given
             salleDTO.setStatutSalle(status);
             given(salleMapper.toEntity(salleDTO)).willReturn(salleEntity);
-            given(salleRepository.save(salleEntity)).willReturn(salleEntity);
+            given(salleRepository.save(any(Salle.class))).willReturn(salleEntity);
             given(salleMapper.toDTO(salleEntity)).willReturn(salleDTO);
 
             // When
@@ -120,8 +120,10 @@ class SalleServiceTest {
 
             // Then
             assertThat(result).isNotNull();
-            verify(salleRepository).save(salleEntity);
         }
+
+        // Vérification du nombre total d'appels après la boucle
+        verify(salleRepository, times(3)).save(any(Salle.class));
     }
 
     @Test
@@ -191,7 +193,7 @@ class SalleServiceTest {
         assertThat(result.getContenace()).isEqualTo(100);
         assertThat(result.getDescSalle()).isEqualTo("Salle mise à jour");
         assertThat(result.getStatutSalle()).isEqualTo(SalleStatus.OCCUPE);
-        verify(salleRepository, times(2)).save(salleEntity);
+        verify(salleRepository, times(1)).save(salleEntity);
     }
 
     @Test

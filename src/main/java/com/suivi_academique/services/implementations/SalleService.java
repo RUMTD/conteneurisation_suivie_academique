@@ -50,27 +50,23 @@ public class SalleService implements SalleInterface {
 
     @Override
     public SalleDTO getById(String codeSalle) {
-        Salle salle = salleRepository.findById(codeSalle).get();
-        if(salle == null){
-            throw new RuntimeException("Salle non trouvée");
-        }else{
-            return salleMapper.toDTO(salle);
-        }
+        Salle salle = salleRepository.findById(codeSalle)
+                .orElseThrow(() -> new RuntimeException("Salle non trouvée"));
+
+        return salleMapper.toDTO(salle);
     }
 
     @Override
     public SalleDTO update(String codeSalle, SalleDTO salleDTO) {
-        Salle salle = salleRepository.findById(codeSalle).get();
-        if(salle==null){
-            throw new RuntimeException("Salle introuvé");
-        }else{
-            salle.setContenance(salleDTO.getContenace());
-            salle.setDescSalle(salleDTO.getDescSalle());
-            salle.setStatutSalle(salleDTO.getStatutSalle());
-            salleRepository.save(salle);
-            return salleMapper.toDTO(salle);
+        Salle salle = salleRepository.findById(codeSalle)
+                .orElseThrow(() -> new RuntimeException("Salle introuvé"));
 
-        }
+        salle.setContenance(salleDTO.getContenace());
+        salle.setDescSalle(salleDTO.getDescSalle());
+        salle.setStatutSalle(salleDTO.getStatutSalle());
+
+        salleRepository.save(salle);
+        return salleMapper.toDTO(salle);
     }
 
     @Override

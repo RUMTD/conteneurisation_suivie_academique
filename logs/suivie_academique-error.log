@@ -226,3 +226,18 @@ Caused by: java.net.ConnectException: Connection refused: getsockopt
 	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:144)
 	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:53)
 	... 152 common frames omitted
+2025-12-18 11:48:24.078 [] [] [] [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.suivi_academique.controllers.SalleController required a bean of type 'com.suivi_academique.services.implementations.SalleService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.suivi_academique.services.implementations.SalleService' in your configuration.
+

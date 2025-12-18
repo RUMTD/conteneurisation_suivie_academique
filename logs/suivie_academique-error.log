@@ -241,3 +241,8 @@ Action:
 
 Consider defining a bean of type 'com.suivi_academique.services.implementations.SalleService' in your configuration.
 
+2025-12-18 15:03:10.291 [] [] [] [main] ERROR c.s.s.implementations.SalleService - salle introuvable modification impossible
+2025-12-18 15:04:29.567 [] [] [] [main] ERROR c.s.s.implementations.SalleService - salle introuvable modification impossible
+2025-12-18 15:05:03.974 [] [] [] [main] ERROR c.s.s.implementations.SalleService - salle introuvable modification impossible
+2025-12-18 15:05:36.067 [] [] [] [main] ERROR c.s.s.implementations.SalleService - salle introuvable modification impossible
+2025-12-18 15:06:47.335 [] [] [] [main] ERROR c.s.s.implementations.SalleService - salle introuvable modification impossible

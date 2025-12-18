@@ -13,10 +13,13 @@ jobs:
     steps:
       - name: Checkout sources
         uses: actions/checkout@v4
+        
+      - name: Allow package mvnw
+        run: chmod +x mvnw
 
       # (Optionnel) Build du JAR Spring Boot avant l'image
       - name: Build Spring Boot JAR
-        run: mvn -B clean package
+        run: ./mvnw -B clean package
 
       - name: Build Docker image
         run: |
